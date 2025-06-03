@@ -14,7 +14,7 @@ ACharacterTemp::ACharacterTemp()
 
 	childActor = CreateDefaultSubobject<UChildActorComponent>(TEXT("Child Actor"));
 	//childActor->SetupAttachment(GetMesh(), TEXT("PlaceWeaponHere")); //use later after setting socket location and name
-
+	
 }
 
 // Called when the game starts or when spawned
