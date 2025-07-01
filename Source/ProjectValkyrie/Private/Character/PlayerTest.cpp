@@ -49,6 +49,10 @@ void APlayerTest::SetupPlayerInputComponent(class UInputComponent* PlayerInputCo
 	// Movement Controls
 	PlayerInputComponent->BindAxis("TurnRight", this, &APlayerTest::MoveRight);
 	PlayerInputComponent->BindAxis("MoveForward", this, &APlayerTest::MoveForward);
+
+	// Camera Controls
+	PlayerInputComponent->BindAxis("LookUp", this, &APlayerTest::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("Turn", this, &APlayerTest::AddControllerYawInput);
 	
 }
 
