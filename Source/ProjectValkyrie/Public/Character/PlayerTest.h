@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Character/CharacterTemp.h"
+#include "Components/SphereComponent.h"
 #include "PlayerTest.generated.h"
 
 /**
@@ -28,16 +29,28 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-protected:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Variable) APlayerController* PlayerController;
 	
-private:
-	void MoveForward(float AxisValueY);
-	void MoveRight(float AxisValueX);
-
+// Properties
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly) class USpringArmComponent* SpringArm;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera") class UCameraComponent* Camera;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera") float LookUpRate;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera") float TurnRate;
+	
+protected:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Variable) APlayerController* PlayerController;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Interact) USphereComponent* InteractSphere;
+	UPROPERTY() AActor* DialogueActor;
+
+private:
+	
+// Functions
+public:
+protected:
+	UFUNCTION() void OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION() void OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	UFUNCTION() void PlayerInteract();
+private:
+	void MoveForward(float AxisValueY);
+	void MoveRight(float AxisValueX);
 };

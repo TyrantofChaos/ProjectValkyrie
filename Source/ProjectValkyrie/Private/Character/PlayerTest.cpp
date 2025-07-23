@@ -5,6 +5,7 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "../ProjectValkyrie.h"
+#include "Components/DiaLogComp.h"
 
 APlayerTest::APlayerTest()
 {
@@ -19,6 +20,17 @@ APlayerTest::APlayerTest()
 	Camera = CreateDefaultSubobject<UCameraComponent>("CameraComponent");
 	Camera->SetupAttachment(SpringArm);
 	Camera->bUsePawnControlRotation = true;
+
+	// Set Sphere Collider
+	InteractSphere = CreateDefaultSubobject<USphereComponent>(TEXT("InteractSphere"));
+	InteractSphere->SetupAttachment(RootComponent);
+	InteractSphere->InitSphereRadius(150.f);
+	InteractSphere->SetHiddenInGame(false);
+	InteractSphere->SetVisibility(true);
+
+	// Set up Overlap Events
+	InteractSphere->OnComponentBeginOverlap.AddDynamic(this, &APlayerTest::OnBeginOverlap);
+	InteractSphere->OnComponentEndOverlap.AddDynamic(this, &APlayerTest::OnEndOverlap);
 	
 }
 
@@ -53,8 +65,42 @@ void APlayerTest::SetupPlayerInputComponent(class UInputComponent* PlayerInputCo
 	// Camera Controls
 	PlayerInputComponent->BindAxis("LookUp", this, &APlayerTest::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("Turn", this, &APlayerTest::AddControllerYawInput);
-	
+
+	// Start Interact Call
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &APlayerTest::PlayerInteract);
 }
+
+void APlayerTest::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (!OtherActor || OtherActor == this) return;
+
+	// See if this actor has DiaLog Component
+	if (OtherActor->FindComponentByClass<UDiaLogComp>())
+	{
+		DialogueActor = OtherActor; // Store this actor for later interaction
+		UE_LOG(PlayerLog, Display, TEXT("Player can interact with: %s"), *OtherActor->GetName());
+	}
+}
+
+void APlayerTest::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	if (DialogueActor) DialogueActor = nullptr;
+}
+
+void APlayerTest::PlayerInteract()
+{
+	if (DialogueActor)
+	{
+		if (UDiaLogComp* DiaLogComp = DialogueActor->GetComponentByClass<UDiaLogComp>())
+		{
+			DiaLogComp->Interact(this);
+			UE_LOG(PlayerLog, Display, TEXT("Interacted with: %s"), *DialogueActor->GetName());
+		}
+	}
+}
+
 
 void APlayerTest::MoveForward(float AxisValueY)
 {

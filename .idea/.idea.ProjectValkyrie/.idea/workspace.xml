@@ -8,15 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6a9be04-67c5-44ee-a316-b42257e7deef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectValkyrie/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectValkyrie/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectValkyrie/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectValkyrie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectValkyrie/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dialogue/BP_DialogueComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dialogue/BP_DialogueComponent.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameModes/BP_ProjectValkyrieGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameModes/BP_ProjectValkyrieGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Architecture/Floor_400x400.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/BP_TextBox.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dialogue/DT_DialogueTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dialogue/DT_DialogueTable.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_TextBox.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/I4/8MJ0VLCW1I8GWUH0O1IIJ4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/I4/8MJ0VLCW1I8GWUH0O1IIJ4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectValkyrie.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectValkyrie.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Character/NPCTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Character/NPCTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Character/PlayerTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Character/PlayerTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Components/DiaLogComp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Components/DiaLogComp.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/NPCTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/NPCTest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/PlayerTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/PlayerTest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Components/DiaLogComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Components/DiaLogComp.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,49 +35,54 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "TyrantofChaos"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TyrantofChaos&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/TyrantofChaos/ProjectValkyrie.git",
-    "accountId": "6771d8ba-377c-4f6f-8627-dc061bcf59b0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TyrantofChaos/ProjectValkyrie.git&quot;,
+    &quot;accountId&quot;: &quot;6771d8ba-377c-4f6f-8627-dc061bcf59b0&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/ProjectValkyrie/Private/Components/DiaLogComp.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ProjectValkyrie/Private/Interfaces/Interact.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ProjectValkyrie/Private/Structs/DialogueStruct.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/ProjectValkyrie/Private/Widgets/DialogueWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ProjectValkyrie/Public/Interfaces/Interact.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ProjectValkyrie/Public/Structs/DialogueStruct.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/ProjectValkyrie/Public/Widgets/DialogueWidget.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Unreal Engine/UE_5.2/Engine/Source/Runtime/Experimental/Chaos/Private/Chaos/Collision/PBDCollisionSolver.ispc" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="NamedScopeManager">
+    <scope name="PVMainScope" pattern="file:Source/ProjectValkyrie/*||file:Source/ProjectValkyrie//*" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2zhxAhuWs1Kmr6xX9iNtPpywXii" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ Project.ProjectValkyrie.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ Project.ProjectValkyrie.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ProjectValkyrie" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -101,16 +112,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752196965678</updated>
-      <workItem from="1752196969662" duration="3723000" />
+      <workItem from="1752196969662" duration="4763000" />
+      <workItem from="1752791114216" duration="11760000" />
+      <workItem from="1753132467250" duration="1156000" />
+      <workItem from="1753224362456" duration="10543000" />
     </task>
+    <task id="LOCAL-00001" summary="Started Moving Dialogue System to Code&#10;ADDED:&#10; DiaLogComp Dialogue component files to manage dialogue and display widget&#10; DialogueStruct Struct used to create a dataTable on the BP side&#10; NPCTest Basic NPC for testing the Dialogue Component&#10; &#10; CHANGED:&#10; Build file reset to norm (not viewable from GIT)&#10; &#10; NOTES:&#10; We're about halfway done with the dialogue system">
+      <option name="closed" value="true" />
+      <created>1752201360163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752201360163</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Started Moving Dialogue System to Code&#10;ADDED:&#10; DiaLogComp Dialogue component files to manage dialogue and display widget&#10; DialogueStruct Struct used to create a dataTable on the BP side&#10; NPCTest Basic NPC for testing the Dialogue Component&#10; &#10; CHANGED:&#10; Build file reset to norm (not viewable from GIT)&#10; &#10; NOTES:&#10; We're about halfway done with the dialogue system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started Moving Dialogue System to Code&#10;ADDED:&#10; DiaLogComp Dialogue component files to manage dialogue and display widget&#10; DialogueStruct Struct used to create a dataTable on the BP side&#10; NPCTest Basic NPC for testing the Dialogue Component&#10; &#10; CHANGED:&#10; Build file reset to norm (not viewable from GIT)&#10; &#10; NOTES:&#10; We're about halfway done with the dialogue system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -127,6 +153,11 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/PlayerTest.h</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -11,3 +11,4 @@ DEFINE_LOG_CATEGORY(CharacterLog); 	// For Character Level Logs
 DEFINE_LOG_CATEGORY(EnemyLog);     	// For Enemy Specific Logs 
 DEFINE_LOG_CATEGORY(GameModeLog);  	// For Game Mode Logs      
 DEFINE_LOG_CATEGORY(SpawnLog);     	// For Spawn Errors        
+DEFINE_LOG_CATEGORY(DiaLog);     	// For Dialogue Errors        

@@ -19,3 +19,4 @@ DECLARE_LOG_CATEGORY_EXTERN(CharacterLog, Log, All);	// For Character Level Logs
 DECLARE_LOG_CATEGORY_EXTERN(EnemyLog, Log, All);		// For Enemy Specific Logs
 DECLARE_LOG_CATEGORY_EXTERN(GameModeLog, Log, All);		// For Game Mode Logs
 DECLARE_LOG_CATEGORY_EXTERN(SpawnLog, Log, All);		// For Spawn Errors
+DECLARE_LOG_CATEGORY_EXTERN(DiaLog, Log, All);			// For Dialogue Errors

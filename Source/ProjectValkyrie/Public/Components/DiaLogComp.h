@@ -5,7 +5,9 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Engine/DataTable.h"
+#include "../ProjectValkyrie.h"
 #include "DiaLogComp.generated.h"
+
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -29,10 +31,22 @@ public:
 // Used for variable creation
 private:
 	UPROPERTY(EditDefaultsOnly, Category = "DataTable") UDataTable* DataTable;
+	UPROPERTY(VisibleAnywhere) bool EndDialogue;
+	UPROPERTY(EditDefaultsOnly, Category = "UI") TSubclassOf<UUserWidget> DialogueWidget;
+	UPROPERTY() UUserWidget* ActiveDialogueWidget;
 	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DataTable") FName RowName;
 	
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FText Name;		
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) FText Name;
+
+	// For Function Creation
+private:
+	
+protected:
+	
+public:
+	UFUNCTION(BlueprintCallable, Category = "Dialogue") void Interact(AActor* InteractingActor);
+	
 };
