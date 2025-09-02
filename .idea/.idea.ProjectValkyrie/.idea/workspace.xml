@@ -9,19 +9,16 @@
   <component name="ChangeListManager">
     <list default="true" id="f6a9be04-67c5-44ee-a316-b42257e7deef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectValkyrie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectValkyrie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dialogue/BP_DialogueComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dialogue/BP_DialogueComponent.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequins/Rigs/CR_Mannequin_BasicFootIK.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequins/Rigs/CR_Mannequin_BasicFootIK.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dialogue/BP_DialogueComponent.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dialogue/BP_NPC.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dialogue/BP_NPC.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dialogue/DT_DialogueTable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dialogue/DT_DialogueTable.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_TextBox.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/I4/8MJ0VLCW1I8GWUH0O1IIJ4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/I4/8MJ0VLCW1I8GWUH0O1IIJ4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectValkyrie.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectValkyrie.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Character/NPCTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Character/NPCTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Character/PlayerTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Character/PlayerTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dialogue/Dialogue_DataTable.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dialogue/Dialogue_Structure.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameModes/BP_ProjectValkyrieGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameModes/BP_ProjectValkyrieGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_DiaLog.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/WBP_DiaLog.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/I4/8MJ0VLCW1I8GWUH0O1IIJ4.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Components/DiaLogComp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Private/Components/DiaLogComp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/ProjectValkyrie.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/NPCTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/NPCTest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/PlayerTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Character/PlayerTest.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Components/DiaLogComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ProjectValkyrie/Public/Components/DiaLogComp.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +113,10 @@
       <workItem from="1752791114216" duration="11760000" />
       <workItem from="1753132467250" duration="1156000" />
       <workItem from="1753224362456" duration="10543000" />
+      <workItem from="1753258579655" duration="1004000" />
+      <workItem from="1753866684269" duration="491000" />
+      <workItem from="1753930445019" duration="868000" />
+      <workItem from="1753943704865" duration="6157000" />
     </task>
     <task id="LOCAL-00001" summary="Started Moving Dialogue System to Code&#10;ADDED:&#10; DiaLogComp Dialogue component files to manage dialogue and display widget&#10; DialogueStruct Struct used to create a dataTable on the BP side&#10; NPCTest Basic NPC for testing the Dialogue Component&#10; &#10; CHANGED:&#10; Build file reset to norm (not viewable from GIT)&#10; &#10; NOTES:&#10; We're about halfway done with the dialogue system">
       <option name="closed" value="true" />
@@ -125,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752201360163</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dialogue System Moved to code&#10;ADDED:&#10;DiaLogComp&#10;DialogueWidget&#10;WBP_DiaLog&#10;&#10;REMOVED:&#10;BP_TextBox (broken beyond repair)&#10;BP_DialogueComponent.uasset (required TextBox)&#10;&#10;CHANGED:&#10;player now has sphere collider&#10;player now checks collision on sphere collider&#10;player can now interact because of collision check and DiaLogComp&#10;DiaLogComp finished and ready for testing&#10;build now includes UMG&#10;NPCTest now has DiaLogComp&#10;&#10;NOTES:&#10;Dialogue Code Version is now ready for testing.&#10;Will perform tests on Thursday">
+      <option name="closed" value="true" />
+      <created>1753258958414</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753258958414</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +145,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Started Moving Dialogue System to Code&#10;ADDED:&#10; DiaLogComp Dialogue component files to manage dialogue and display widget&#10; DialogueStruct Struct used to create a dataTable on the BP side&#10; NPCTest Basic NPC for testing the Dialogue Component&#10; &#10; CHANGED:&#10; Build file reset to norm (not viewable from GIT)&#10; &#10; NOTES:&#10; We're about halfway done with the dialogue system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started Moving Dialogue System to Code&#10;ADDED:&#10; DiaLogComp Dialogue component files to manage dialogue and display widget&#10; DialogueStruct Struct used to create a dataTable on the BP side&#10; NPCTest Basic NPC for testing the Dialogue Component&#10; &#10; CHANGED:&#10; Build file reset to norm (not viewable from GIT)&#10; &#10; NOTES:&#10; We're about halfway done with the dialogue system" />
+    <MESSAGE value="Dialogue System Moved to code&#10;ADDED:&#10;DiaLogComp&#10;DialogueWidget&#10;WBP_DiaLog&#10;&#10;REMOVED:&#10;BP_TextBox (broken beyond repair)&#10;BP_DialogueComponent.uasset (required TextBox)&#10;&#10;CHANGED:&#10;player now has sphere collider&#10;player now checks collision on sphere collider&#10;player can now interact because of collision check and DiaLogComp&#10;DiaLogComp finished and ready for testing&#10;build now includes UMG&#10;NPCTest now has DiaLogComp&#10;&#10;NOTES:&#10;Dialogue Code Version is now ready for testing.&#10;Will perform tests on Thursday" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dialogue System Moved to code&#10;ADDED:&#10;DiaLogComp&#10;DialogueWidget&#10;WBP_DiaLog&#10;&#10;REMOVED:&#10;BP_TextBox (broken beyond repair)&#10;BP_DialogueComponent.uasset (required TextBox)&#10;&#10;CHANGED:&#10;player now has sphere collider&#10;player now checks collision on sphere collider&#10;player can now interact because of collision check and DiaLogComp&#10;DiaLogComp finished and ready for testing&#10;build now includes UMG&#10;NPCTest now has DiaLogComp&#10;&#10;NOTES:&#10;Dialogue Code Version is now ready for testing.&#10;Will perform tests on Thursday" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

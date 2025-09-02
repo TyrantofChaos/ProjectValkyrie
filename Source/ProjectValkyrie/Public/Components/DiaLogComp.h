@@ -32,8 +32,8 @@ public:
 private:
 	UPROPERTY(EditDefaultsOnly, Category = "DataTable") UDataTable* DataTable;
 	UPROPERTY(VisibleAnywhere) bool EndDialogue;
-	UPROPERTY(EditDefaultsOnly, Category = "UI") TSubclassOf<UUserWidget> DialogueWidget;
-	UPROPERTY() UUserWidget* ActiveDialogueWidget;
+	UPROPERTY(EditAnywhere, Category = "UI") TSubclassOf<UUserWidget> DialogueWidget;
+	UPROPERTY(VisibleAnywhere) UUserWidget* ActiveDialogueWidget;
 	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DataTable") FName RowName;

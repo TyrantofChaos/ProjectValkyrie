@@ -41,6 +41,7 @@ void UDiaLogComp::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 
 void UDiaLogComp::Interact(AActor* InteractingActor)
 {
+	UE_LOG(DiaLog, Display, TEXT("Entering Interact Method"));
 	// If Dialogue is done close widget
 	if (EndDialogue)
 	{
@@ -67,9 +68,11 @@ void UDiaLogComp::Interact(AActor* InteractingActor)
 		return;
 	}
 
+	
 	// Validate Widget
 	if (!ActiveDialogueWidget && DialogueWidget)
 	{
+		UE_LOG(DiaLog, Warning, TEXT("Setting Active Dialogue Widget"));
 		ActiveDialogueWidget = CreateWidget<UUserWidget>(GetWorld(), DialogueWidget);
 		if (ActiveDialogueWidget) ActiveDialogueWidget->AddToViewport();			
 	}
@@ -77,10 +80,16 @@ void UDiaLogComp::Interact(AActor* InteractingActor)
 	// Now push the text to the widget (for both new and existing cases)
 	if (ActiveDialogueWidget)
 	{
+		
 		if (UDialogueWidget* DialogueUI = Cast<UDialogueWidget>(ActiveDialogueWidget))
 		{
+			UE_LOG(DiaLog, Display, TEXT("Checking Dialogue UI"));
+			// Set Name for Text Box
 			DialogueUI->SetSpeakerName(Name);
+			UE_LOG(DiaLog, Display, TEXT("Name: %s"), *Name.ToString());
+			// Set Dialogue to be displayed
 			DialogueUI->SetDialogueText(Row->DialogueText);
+			
 		}
 	}
 
