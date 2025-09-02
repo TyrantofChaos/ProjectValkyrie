@@ -4,7 +4,6 @@
 #include "Components/DiaLogComp.h"
 #include "LocTextHelper.h"
 #include "NavigationSystemTypes.h"
-#include "BehaviorTree/BehaviorTreeTypes.h"
 #include "Blueprint/UserWidget.h"
 #include "Structs/DialogueStruct.h"
 #include "VisualLogger/VisualLoggerTypes.h"
